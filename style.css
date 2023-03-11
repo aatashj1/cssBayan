@@ -7,7 +7,7 @@ html, body, div, span, h1, p, em, img, header {
 }
 
 .container {
- margin: 0 10%;
+ margin: 0 20%;
 }
 
 a:focus,
@@ -24,9 +24,22 @@ color: #3f3fad;
 }
 
 .blue:hover  a {
- text-decoration: none;
  cursor: pointer;
  color: black;
+}
+
+.plus {
+display: none;
+
+}
+
+.blue:hover .plus {
+ display: block;
+ width: 3%;
+}
+
+.meme:hover .plus {
+ transform: rotate(45deg);;
 }
 
 body {
@@ -50,14 +63,14 @@ img {
 
 header {
  margin: 2rem 0;
- font-size: 250%;
+ font-size: 230%;
 }
 
 .text {
  display: flex;
  flex-direction: row;
  justify-content: space-between;
- font-size: 2.5rem;
+ font-size: 2rem;
  font-weight: bold;
 
 }
@@ -73,6 +86,7 @@ header {
  height: 0;
  width: 40%;
  margin: 0.6rem 0 ;
+ /*transition: all .7s, padding .5s;*/
 }
 
 
@@ -83,6 +97,19 @@ header {
 .meme:hover .meme-pic{
  height: 100%;
 }
+
+
+
+.meme {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.meme-pic {
+ align-self: center;
+}
+
 
 
 
