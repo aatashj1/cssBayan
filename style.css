@@ -3,11 +3,12 @@ html, body, div, span, h1, p, em, img, header {
  padding: 0;
  border: 0;
  vertical-align: baseline;
- font-family: Helvetica, serif;
+ font-family: "Comic Sans MS", serif;
 }
 
 .container {
  margin: 0 20%;
+
 }
 
 a:focus,
@@ -35,11 +36,15 @@ display: none;
 
 .blue:hover .plus {
  display: block;
- width: 3%;
+ width: 32px;
 }
 
 .meme:hover .plus {
  transform: rotate(45deg);;
+}
+
+.meme:active a {
+ color: #3f3fad;
 }
 
 body {
@@ -143,5 +148,6 @@ header {
 @media screen and (min-width: 1920px) {
  .container {
   max-width: 1919px;
+  height: 1200px;
  }
 }
