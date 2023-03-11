@@ -3,27 +3,30 @@ html, body, div, span, h1, p, em, img, header {
  padding: 0;
  border: 0;
  vertical-align: baseline;
+ font-family: Helvetica, serif;
+}
+
+.container {
+ margin: 0 10%;
 }
 
 a:focus,
 a:active {
  outline: none;
- color: blue;
+ color: black;
 }
-
 
 
 a  {
  text-decoration: none;
-color: black;
+color: #3f3fad;
+
 }
 
-a:hover  {
+.blue:hover  a {
  text-decoration: none;
-}
-
-footer, header, section {
- display: block;
+ cursor: pointer;
+ color: black;
 }
 
 body {
@@ -45,47 +48,73 @@ img {
  width: 3%;
 }
 
-
-
-@media screen and (max-width: 400px) {
-
-
- .container {
-  max-width: 380px;
-  margin: 0 6%;
- }
 header {
- margin: 10% 0;
+ margin: 2rem 0;
+ font-size: 250%;
 }
 
+.text {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ font-size: 2.5rem;
+ font-weight: bold;
+
+}
+
+.line {
+ margin: 0 0 2rem 0;
+ width: 100%;
+ height: 0.05rem;
+ background-color: #726042;
+}
+
+.meme-pic {
+ height: 0;
+ width: 40%;
+ margin: 0.6rem 0 ;
+}
+
+
+.meme-pic:target {
+ height: 100%;
+}
+
+.meme:hover .meme-pic{
+ height: 100%;
+}
+
+
+
+@media screen and (max-width: 380px) {
+a {
+ color: black;
+}
+ .container {
+  max-width: 380px;
+ }
+header {
+ font-size: 100%;
+ margin: 10% 0;
+}
  .plus {
   width: 5%;
  }
-
  .meme-pic {
   width: 70%;
   margin: 0.6rem 0 ;
-  height: 0;
  }
-
- .text {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 1.2rem;
-  font-weight: bold;
-  font-family: Helvetica, serif;
- }
-
- .line {
-  margin: 0 0 2rem 0;
-  width: 100%;
-  height: 0.05rem;
-  background-color: #726042;
- }
-
+.text {
+ font-size: 1.2rem;
+}
  .meme-pic:target {
   height: 100%;
  }
+}
 
+
+@media screen and (min-width: 1920px) {
+ .container {
+  max-width: 1919px;
+ }
 }
