@@ -150,7 +150,7 @@ header {
  }
 
  .meme-pic:target {
-  height: 100%;
+  height: 20rem;
   transition: height .7s ease-in-out;
  }
 
